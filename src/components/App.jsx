@@ -8,10 +8,18 @@ export class  App extends Component {
     bad: 0
   }
 
+  updateFeedback = type => {
+    this.setState(prevState => {
+      return {
+        [type]: prevState[type] + 1,
+      }
+    })
+  };
+
 render() {
   return (
   <div>
-  <Feedback type = {this.state.feedback}/>
+  <Feedback updateFeedback={this.updateFeedback} feedback={this.state}/>
   </div>
 )
 }
