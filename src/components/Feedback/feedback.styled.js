@@ -4,7 +4,7 @@ export const FeedbackWrapper = styled.div`
  width: 480px;
  padding-left: 20px;
  padding-right: 20px;
- margin-top: 20px;
+ padding-top: 20px;
 
 `;
 
@@ -43,14 +43,7 @@ font-family: Cantarell;
 font-size: 30px;
 color: red;
 
-margin-top: 20px;
 margin-bottom: 10px;
 `;
 
-export const StatisticList = styled.li`
-list-style: none;
-font-family: Helvetica Neue;
-font-size: 20px;
-
-`;
 

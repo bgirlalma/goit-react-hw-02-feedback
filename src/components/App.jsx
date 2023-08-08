@@ -2,7 +2,6 @@ import { Component } from "react";
 import { Feedback } from "./Feedback/feedback";
 import { GlobalStyle } from "./globalStyled";
 
-
 export class  App extends Component {
   state = {
     good: 0,
