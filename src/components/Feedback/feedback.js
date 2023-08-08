@@ -1,21 +1,23 @@
-import { Component } from "react";
+import { FeedbackWrapper, ButtonFeedback, LastChild, Title, StatisticList } from './feedback.styled'
 
+import { Component } from "react";
 export class Feedback extends Component {
    
     render() {
         return (
-        <div>
-          <button onClick={() => this.props.updateFeedback('good')}>Good</button>
-          <button onClick={() => this.props.updateFeedback('neutral')}>Neutral</button>
-          <button onClick={() => this.props.updateFeedback('bad')}>Bad</button>  
+        <FeedbackWrapper>
+          <ButtonFeedback onClick={() => this.props.updateFeedback('good')}>Good</ButtonFeedback>
+          <ButtonFeedback onClick={() => this.props.updateFeedback('neutral')}>Neutral</ButtonFeedback>
+          <LastChild onClick={() => this.props.updateFeedback('bad')}>Bad</LastChild>  
 
-         <h2>Statistic</h2>
-         <ul>
-            <li>Good: {this.props.feedback.good}</li>
-            <li>Neutral: {this.props.feedback.neutral}</li>
-            <li>Bad: {this.props.feedback.bad}</li>
-         </ul>
-        </div>
+          <Title>Statistic</Title>
+    <ul>
+       <StatisticList>Good: {this.props.feedback.good}</StatisticList>
+       <StatisticList>Neutral: {this.props.feedback.neutral}</StatisticList>
+       <StatisticList>Bad: {this.props.feedback.bad}</StatisticList>
+    </ul> 
+
+        </FeedbackWrapper>
       )
       }
 }
