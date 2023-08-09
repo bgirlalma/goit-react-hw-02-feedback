@@ -31,5 +31,15 @@ body {
     padding: 0;
   }
 
+  h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: red;
+  }
 
+  p{
+    font-family: Oxygen;
+    font-size: 20px;
+    color: rgb(5 85 63);
+  }
 `
